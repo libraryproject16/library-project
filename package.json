@@ -1,0 +1,43 @@
+{
+  "name": "library-project",
+  "version": "1.0.0",
+  "description": "Library Project",
+  "main": "app.js",
+  "dependencies": {
+    "jquery": "^2.2.0"
+  },
+  "devDependencies": {
+    "bootstrap-sass": "^3.3.6",
+    "browser-sync": "^2.11.1",
+    "connect-history-api-fallback": "^1.1.0",
+    "del": "^2.2.0",
+    "gulp": "gulpjs/gulp#4.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-flatten": "^0.2.0",
+    "gulp-load-plugins": "^1.2.0",
+    "gulp-protractor": "^2.1.0",
+    "gulp-sass": "^2.1.1",
+    "gulp-uglify": "^1.5.1",
+    "jasmine-core": "^2.4.1",
+    "karma": "^0.13.19",
+    "karma-chrome-launcher": "^0.2.2",
+    "karma-jasmine": "^0.3.6",
+    "object-assign": "^4.0.1",
+    "protractor": "^3.0.0",
+    "webpack": "^1.12.12",
+    "yargs": "^3.32.0"
+  },
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/libraryproject16/library-project.git"
+  },
+  "scripts": {
+    "start": "gulp start",
+    "test": "gulp test",
+    "release": "gulp release",
+    "dev": "gulp dev",
+    "postinstall": "webdriver-manager update"
+  },
+  "author": "Library Project",
+  "license": "ISC"
+}
