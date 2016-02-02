@@ -95,7 +95,9 @@ function buildJs(done) {
 
     function buildVendorsJs() {
         var jsFiles = [
-            'node_modules/jquery/dist/jquery.js'
+            'node_modules/jquery/dist/jquery.js',
+            'node_modules/bootstrap-sass/assets/javascripts/bootstrap.js',
+            'node_modules/angular2/bundles/angular2-polyfills.js'
         ];
         var stream = gulp.src(jsFiles)
             .pipe($.concat('vendors.js'));
@@ -137,6 +139,7 @@ function buildJs(done) {
 
         function webpackProdConfig(webpackConfig) {
             return objectAssign(webpackConfig, {
+                entry:['./prod/enable-prod.ts'].concat(webpackConfig.entry),
                 plugins: [
                     new webpack.optimize.UglifyJsPlugin()
                 ]

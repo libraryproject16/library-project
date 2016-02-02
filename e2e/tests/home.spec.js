@@ -1,9 +1,11 @@
 var homePage = require('../pages/home.page');
 
 describe('Home page', function() {
-    it('should exist', function() {
+    it('heading should be set appropriately', headingSet);
+
+    function headingSet() {
         homePage.navigate();
 
-        browser.sleep(2000);
-    });
+        expect(homePage.heading.getText()).toEqual('Library Project');
+    }
 });
