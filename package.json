@@ -4,7 +4,13 @@
   "description": "Library Project",
   "main": "app.js",
   "dependencies": {
-    "jquery": "^2.2.0"
+    "angular2": "^2.0.0-beta.2",
+    "es6-promise": "^3.0.2",
+    "es6-shim": "^0.33.13",
+    "jquery": "^2.2.0",
+    "reflect-metadata": "^0.1.2",
+    "rxjs": "^5.0.0-beta.0",
+    "zone.js": "^0.5.10"
   },
   "devDependencies": {
     "bootstrap-sass": "^3.3.6",
@@ -24,12 +30,15 @@
     "karma-jasmine": "^0.3.6",
     "object-assign": "^4.0.1",
     "protractor": "^3.0.0",
+    "raw-loader": "^0.5.1",
+    "ts-loader": "^0.8.0",
+    "typescript": "^1.7.5",
     "webpack": "^1.12.12",
     "yargs": "^3.32.0"
   },
-  "repository" : {
-    "type" : "git",
-    "url" : "https://github.com/libraryproject16/library-project.git"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/libraryproject16/library-project.git"
   },
   "scripts": {
     "start": "gulp start",
